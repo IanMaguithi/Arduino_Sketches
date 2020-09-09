@@ -1,6 +1,6 @@
 # Arduino_Sketches
 ### Introduction
-This repository contains several Arduino sketches I have written to be while learning Arduino. 
+This repository contains several Arduino sketches I have written while learning Arduino. 
 Most of them include code on small projects like how to use a button as a toggle switch. 
 
 
