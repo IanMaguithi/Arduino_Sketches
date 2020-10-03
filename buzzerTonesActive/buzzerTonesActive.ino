@@ -1,6 +1,5 @@
 int buzzPin=8;
-int dtOne=5;
-int dtTwo=50;
+int dtOne=1;
 int counter;
 // getting tones from active buzzer
 
@@ -16,14 +15,8 @@ void loop() {
     digitalWrite(buzzPin,HIGH);
     delay(dtOne);
     digitalWrite(buzzPin,LOW);
-    delay(dtOne);    
+    delayMicroseconds(dtOne);    
   }
 
-  for(counter=0; counter<99; counter++){
-    digitalWrite(buzzPin,HIGH);
-    delay(dtTwo);
-    digitalWrite(buzzPin,LOW);
-    delay(dtTwo);     
-  }
 
 }

@@ -1,6 +1,6 @@
-int redPin=7;
-int greenPin=8;
-int bluePin=9;
+int redPin=9;
+int greenPin=7;
+int bluePin=8;
 
 String myColor;
 String msg="What colour do you want?";
@@ -23,7 +23,7 @@ void loop() {
   }
 
   myColor=Serial.readString();
-  myColor.toLowerCase()
+  myColor.toLowerCase();
 
   if (myColor == "red"){
     digitalWrite(redPin,HIGH);
@@ -40,10 +40,16 @@ void loop() {
     digitalWrite(greenPin,LOW);
     digitalWrite(bluePin,HIGH);
   }
-    if (myColor == "off"){
-    digitalWrite(redPin,LOW);
-    digitalWrite(greenPin,LOW);
-    digitalWrite(bluePin,LOW);
+    if (myColor == "cyan"){
+    analogWrite(redPin,0);
+    analogWrite(greenPin,255);
+    analogWrite(bluePin,255);
   }
+  if (myColor == "magenta"){
+    analogWrite(redPin,255);
+    analogWrite(greenPin,0);
+    analogWrite(bluePin,255);
+  }
+
 
 }
